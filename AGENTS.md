@@ -149,3 +149,17 @@ The quick tier leaves out the motion cases; a feature whose cases all watch moti
   - Groups, fixed in name and order: 新增功能 / 体验优化 / 问题修复 / 安全 / 移除 / 其他变更 and New Features / Improvements / Bug Fixes / Security / Removals / Chores; empty groups are omitted.
   - Footer: `**Full Changelog**: [vPrevious...vCurrent](compare link)`.
   - One entry per verifiable behavior or contract: the symptom the user saw, then the behavior after the change. Root causes go in the commit message. External contract changes (settings, private routes, host version requirements) are called out; performance changes carry locally measured numbers; user-facing changes stay in sync with the READMEs. No internal numbering, no boilerplate, no format notes inside version sections.
+
+## Agent skills
+
+### Issue tracker
+
+Issues live in this repo's GitHub Issues (`ColoristSansi/dsh-claude-style`), driven by the `gh` CLI. See `docs/agents/issue-tracker.md`.
+
+### Triage labels
+
+The five canonical triage roles keep their default label strings. See `docs/agents/triage-labels.md`.
+
+### Domain docs
+
+Domain docs are single-context: one `GLOSSARY.md` at the repo root, decisions under `docs/decisions/`. See `docs/agents/domain.md`.
