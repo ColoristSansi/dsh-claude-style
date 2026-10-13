@@ -64,7 +64,7 @@ export function createSettingsGeneralTab(): SettingsTab {
         rank: 10,
         node: controls.row(
           'brand',
-          settingsCopy('brandTitle', 'Theme style'),
+          settingsCopy('brandTitle', 'Brand'),
           settingsCopy('brandDesc', 'The brand mark in the sidebar and on the home page, and its colour family: warm for Claude, blue for DeepSeek. While Colours is set to Follow the host, only the mark changes.'),
           themePicker(prefs, write),
           { block: true },

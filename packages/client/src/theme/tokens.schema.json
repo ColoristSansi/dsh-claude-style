@@ -39,7 +39,7 @@
       }
     },
     "palette": {
-      "description": "Colour tokens: the Claude brand's two themes, the DeepSeek brand's overrides of them, and the alias under the host palette.",
+      "description": "Colour tokens: the Claude brand's light and dark blocks, the DeepSeek brand's overrides of them, and the alias under the host palette.",
       "type": "array",
       "items": {
         "type": "object",

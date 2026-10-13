@@ -18,7 +18,7 @@
 
 ## Preview
 
-The settings page's Theme style row switches between the Claude and DeepSeek palettes, and light/dark follows your system's color mode. In each group the top row is the Studio home page and the bottom row a Markdown conversation, light on the left and dark on the right.
+The settings page's Brand row switches between Claude and DeepSeek: the brand mark in the sidebar and on the home page, that mark's colour family, and which mascot Follow the brand shows. Light and dark follow your system's color mode. In each group the top row is the Studio home page and the bottom row a Markdown conversation, light on the left and dark on the right.
 
 ### Claude
 

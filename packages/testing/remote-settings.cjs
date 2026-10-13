@@ -27,7 +27,7 @@ const SKIN = {
   rows: 'fieldset.dsh-claude-settings-rows',
   notice: '.dsh-claude-settings-notice',
   error: '.dsh-claude-settings-error',
-  // The theme style's choices carry the brand they pick on their logo.
+  // The brand row's choices carry the brand they pick on their logo.
   brandCard: (brand) => `.dsh-claude-brand-card:has(.dsh-claude-brand-card-logo[data-brand="${brand}"])`,
 }
 
@@ -112,8 +112,8 @@ function remoteSettingsScenario({ check }) {
       const local = remote.localPage
       return [
         check('远程页面开在非 loopback 的名字下', remote.hostname === REMOTE_NAME, `hostname=${remote.hostname}`),
-        check('远程页面一打开就是宿主的主题风格', remote.remoteAtStart === remote.original, `remote=${remote.remoteAtStart} local=${remote.original}`),
-        check('本机页面写入了另一种主题风格', remote.localWrote === true, `target=${remote.target}`),
+        check('远程页面一打开就是宿主的品牌', remote.remoteAtStart === remote.original, `remote=${remote.remoteAtStart} local=${remote.original}`),
+        check('本机页面写入了另一个品牌', remote.localWrote === true, `target=${remote.target}`),
         check('远程页面不刷新就跟上本机的改动', remote.followed === true, `target=${remote.target}`),
         check('远程页面刷新后读到的仍是宿主的值', remote.afterReload === remote.target, `afterReload=${remote.afterReload}`),
         check('远程设置页开头有说明行', typeof page.notice === 'string' && page.notice !== '', page.notice ?? 'no notice'),
@@ -121,7 +121,7 @@ function remoteSettingsScenario({ check }) {
         check('远程设置页的标签页仍可切换', page.tabs > 1, `tabs=${page.tabs}`),
         check('远程设置页没有报错行', page.error === null, page.error ?? ''),
         check('本机设置页可写且没有说明行', local.disabled === false && local.notice === null && local.enabled > 0, `disabled=${local.disabled} enabled=${local.enabled}`),
-        check('写回原值后两边都回到原来的主题风格', remote.restored === true && remote.followedBack === true, `restored=${remote.restored} followedBack=${remote.followedBack}`),
+        check('写回原值后两边都回到原来的品牌', remote.restored === true && remote.followedBack === true, `restored=${remote.restored} followedBack=${remote.followedBack}`),
         check('远程页面的控制台没有异常', remote.problems.length === 0, remote.problems.slice(0, 3).join(' | ')),
         check('控制台没有异常', session.problems.length === 0, session.problems.slice(0, 3).join(' | ')),
       ]

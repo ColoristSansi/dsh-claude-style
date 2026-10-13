@@ -165,7 +165,7 @@
   "settings": {
     "title": { "zh": "Claude Style", "en": "Claude Style" },
     "repository": { "zh": "在 GitHub 上打开本插件", "en": "Open the plugin on GitHub" },
-    "brandTitle": { "zh": "主题风格", "en": "Theme style" },
+    "brandTitle": { "zh": "品牌", "en": "Brand" },
     "brandDesc": {
       "zh": "插件提供的品牌标识和配色色系风格。",
       "en": "The brand mark in the sidebar and on the home page, and its colour family: warm for Claude, blue for DeepSeek. While Colours is set to Follow the host, only the mark changes."

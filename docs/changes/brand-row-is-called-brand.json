@@ -1,0 +1,8 @@
+{
+  "at": "2026-10-14",
+  "group": "improvements",
+  "order": 0,
+  "external": true,
+  "zh": "设置页那一行选的是 Claude 与 DeepSeek 两个品牌预设，名字却叫「主题风格」，与「外观」页的「配色」读起来像同一批选项。这一行现在叫「品牌」：可选的品牌、存下的设置值与切换后的效果都不变，README 里「两种主题」的说法一并改成「两个品牌」。",
+  "en": "The row that picks between the two brand presets, Claude and DeepSeek, was called Theme style, which read as the same thing as the Appearance tab's Colours. It is now called Brand: the brands on offer, the stored values and what a switch does are unchanged, and the READMEs say two brands where they said two themes."
+}
